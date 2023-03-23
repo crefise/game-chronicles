@@ -22,7 +22,7 @@ use App\Http\Controllers\Api\BankController;
 */
 
 Route::group(['middleware' => 'guest:sanctum'], function () {
-    Route::name('.auth')->group(function () {
+    Route::name('auth.')->group(function () {
         Route::get('/registration', [AuthController::class, 'registration'])->name('registration');
         Route::get('/login', [AuthController::class, 'login'])->name('login');
     });

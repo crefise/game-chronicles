@@ -13,6 +13,7 @@ const mix = require('laravel-mix');
 const MODULES = [
   'welcome',
   'auth',
+  'header',
 ];
 
 MODULES.map(module => {

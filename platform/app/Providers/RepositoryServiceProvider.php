@@ -23,30 +23,11 @@ class RepositoryServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind(
+        /*
+            $this->app->bind(
             PerformanceRepositoryInterface::class,
             PerformanceRepository::class
-        );
-
-        $this->app->bind(
-            BillRepositoryInterface::class,
-            BillRepository::class
-        );
-
-        $this->app->bind(
-            BankRepositoryInterface::class,
-            BankRepository::class
-        );
-
-        $this->app->bind(
-            BankSettingRepositoryInterface::class,
-            BankSettingRepository::class
-        );
-
-        $this->app->bind(
-            TransactionRepositoryInterface::class,
-            TransactionRepository::class
-        );
+        );*/
     }
 
     /**

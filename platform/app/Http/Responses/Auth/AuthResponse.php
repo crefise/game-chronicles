@@ -35,7 +35,7 @@ class AuthResponse {
         return response()->json([
             'type'    => $this->SUCCESS_STATUS_SLUG,
             'message' => 'Was logged out',
-            'url'     => route('login'),
+            'url'     => route('auth.login'),
         ]);
     }
 }
