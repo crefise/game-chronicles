@@ -14,6 +14,7 @@ const MODULES = [
   'welcome',
   'auth',
   'header',
+  'game',
 ];
 
 MODULES.map(module => {

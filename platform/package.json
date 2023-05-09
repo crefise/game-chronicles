@@ -35,6 +35,7 @@
         "@mui/material": "^5.11.6",
         "@syncfusion/ej2-react-grids": "^20.3.50",
         "easy-form": "https://github.com/crefise/easy-form.git",
+        "get-url-parameter": "^1.0.0",
         "multiselect-react-dropdown": "^2.0.25",
         "react-bootstrap": "^2.5.0",
         "react-datepicker": "^4.8.0",

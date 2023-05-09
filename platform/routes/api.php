@@ -8,6 +8,7 @@ use App\Http\Controllers\Api\PerformanceController;
 use App\Http\Controllers\Api\BillController;
 use App\Http\Controllers\Api\BankController;
 
+/** Guest routes */
 Route::group(['middleware' => 'guest:sanctum'], function () {
     Route::name('auth.')->group(function () {
         Route::post('login', [AuthController::class, 'login'])->name('login');
@@ -15,7 +16,13 @@ Route::group(['middleware' => 'guest:sanctum'], function () {
     });
 });
 
+/** Protected routes */
 Route::group(['middleware' => 'auth:sanctum'], function () {
+    Route::name('game.')->group(function () {
+        Route::get('games', [\App\Http\Controllers\Api\GameController::class, 'index'])->name('index');
+        Route::get('/games/{id}', [\App\Http\Controllers\Api\GameController::class, 'show'])->name('show');
+    });
+
     Route::get('logout', [AuthController::class, 'logout'])->name('logout_user');
     Route::get('profile', [ProfileController::class, 'show'])->name('profile_user');
 

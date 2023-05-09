@@ -2,16 +2,8 @@
 
 namespace App\Providers;
 
-use App\Repositories\BankRepository;
-use App\Repositories\BankSettingRepository;
-use App\Repositories\BillRepository;
-use App\Repositories\Interfaces\BankRepositoryInterface;
-use App\Repositories\Interfaces\BankSettingRepositoryInterface;
-use App\Repositories\Interfaces\BillRepositoryInterface;
-use App\Repositories\Interfaces\PerformanceRepositoryInterface;
-use App\Repositories\Interfaces\TransactionRepositoryInterface;
-use App\Repositories\PerformanceRepository;
-use App\Repositories\TransactionRepository;
+use App\Repositories\GameRepository;
+use App\Repositories\Interfaces\GameRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
 
 class RepositoryServiceProvider extends ServiceProvider
@@ -23,11 +15,10 @@ class RepositoryServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        /*
-            $this->app->bind(
-            PerformanceRepositoryInterface::class,
-            PerformanceRepository::class
-        );*/
+        $this->app->bind(
+        GameRepositoryInterface::class,
+        GameRepository::class
+        );
     }
 
     /**
