@@ -1,40 +1,39 @@
 <template>
- <div class="unique-class-header">
-     <div>
-         User is
-         <strong :class="authorized ? 'unique-authorized' : 'unique-unauthorized'">
-            {{ authorized ? 'authorized' : 'do not authorized'}}
-         </strong>
-     </div>
-     <template v-if="!authorized">
-         <div>
-             <a href="/login">Login</a>
-         </div>
-         <div>
-             <a href="/registration">Registration</a>
-         </div>
-     </template>
-
-     <template v-if="authorized">
-         <div>
-             <a href="/dashboard">Dashboard</a>
-         </div>
-         <div>
-             <a @click="logout">Logout</a>
-         </div>
-     </template>
-
- </div>
+  <div class="custom-header">
+    <div class="absolute-cross-lines">
+      <div class="absolute-cross-lines-line"></div>
+      <div class="absolute-cross-lines-line"></div>
+    </div>
+    <div class="custom-header-box">
+      <div class="custom-header-logo">
+        <img src="/images/icons/logo.png">
+      </div>
+      <div>
+        <custom-input />
+      </div>
+    </div>
+    <div class="custom-header-box">
+      <custom-button>Login</custom-button>
+      <custom-button>Register</custom-button>
+    </div>
+  </div>
 </template>
 
 <script>
 import axios from "axios";
+import CustomButton from "Modules/fundamentals/inputs/CustomButton.vue";
+import CustomInput from "Modules/fundamentals/inputs/CustomInput.vue";
 
 export default {
   /**
    * Component name
    */
   name: 'Header',
+
+  components: {
+    CustomInput,
+    CustomButton
+  },
 
   /**
    * Props
@@ -58,21 +57,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-    .unique-class-header {
-        display: flex;
-        justify-content: space-around;
-        border: 1px black solid;
-    }
-
-    .unique-unauthorized {
-        font-weight: bold;
-        color: red;
-    }
-
-    .unique-authorized {
-        font-weight: bold;
-        color: green;
-    }
-</style>

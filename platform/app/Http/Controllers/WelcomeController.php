@@ -12,7 +12,7 @@ class WelcomeController extends Controller
     /**
      * Module prefix
      */
-    final const MODULE_PREFIX = 'welcome';
+    const MODULE_PREFIX = 'welcome';
 
     /**
      * Get index page

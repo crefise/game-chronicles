@@ -12,7 +12,7 @@ class SettingsController extends Controller
     /**
      * Module prefix
      */
-    final const MODULE_PREFIX = 'settings';
+    const MODULE_PREFIX = 'settings';
 
     /**
      * Get index page

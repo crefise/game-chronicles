@@ -2,5 +2,13 @@
     "/js/welcome.js": "/js/welcome.js",
     "/js/auth.js": "/js/auth.js",
     "/js/header.js": "/js/header.js",
-    "/js/game.js": "/js/game.js"
+    "/js/game.js": "/js/game.js",
+    "/css/styles.css": "/css/styles.css",
+    "/images/download.jpeg": "/images/download.jpeg",
+    "/images/icons/logo.png": "/images/icons/logo.png",
+    "/images/test.jpg": "/images/test.jpg",
+    "/images/test2.jpg": "/images/test2.jpg",
+    "/images/test3.webp": "/images/test3.webp",
+    "/images/test4.jpg": "/images/test4.jpg",
+    "/images/test3.jpg": "/images/test3.jpg"
 }

@@ -1,0 +1,10 @@
+@import "fundamentals/fonts";
+@import "fundamentals/inputs";
+
+body {
+  font-family: 'Kanit', sans-serif;
+  color: $--platform-main-white;
+  background: #151414;
+  margin: 0;
+  padding: 0;
+}

@@ -9,7 +9,6 @@
 @endsection
 
 @section('main')
-    dsadsa
     <div id="app">
         <Registration></Registration>
     </div>

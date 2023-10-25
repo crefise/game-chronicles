@@ -1,10 +1,18 @@
 <template>
   <div>
-    <h1>Show game page</h1>
-    <div class="box">
-      <div v-html="game.id"></div>
-      <div v-html="game.name"></div>
-      <div v-html="game.key"></div>
+    <div>
+      <h1>Show game page</h1>
+      <div class="box">
+        <div>
+          <div v-html="game.id"></div>
+          <div v-html="game.name"></div>
+          <div v-html="game.key"></div>
+        </div>
+        <div>
+          <button>Attach</button>
+          <button>Detach</button>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -40,9 +48,9 @@ export default {
 </script>
 
 <style scoped>
-  .box {
-      margin: 15px;
-      padding: 4px;
-      border: 1px black solid;
-  }
+.box {
+    margin: 15px;
+    padding: 4px;
+    border: 1px black solid;
+}
 </style>

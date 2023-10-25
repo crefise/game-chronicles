@@ -18,4 +18,9 @@ class Game extends Model
         'ext_id',
         'import_id'
     ];
+
+    public function user()
+    {
+        // return $this->belongsToMany(Game::class);
+    }
 }

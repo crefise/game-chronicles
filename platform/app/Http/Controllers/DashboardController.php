@@ -12,7 +12,7 @@ class DashboardController extends Controller
     /**
      * Module prefix
      */
-    final const MODULE_PREFIX = 'dashboard';
+    const MODULE_PREFIX = 'dashboard';
 
     /**
      * Get index page

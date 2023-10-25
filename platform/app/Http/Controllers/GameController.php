@@ -12,7 +12,7 @@ class GameController extends Controller
     /**
      * Module prefix
      */
-    final const MODULE_PREFIX = 'game';
+    const MODULE_PREFIX = 'game';
 
     /**
      * Get index page

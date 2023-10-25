@@ -2,8 +2,13 @@
 
 namespace App\Providers;
 
+use App\Models\User;
 use App\Repositories\GameRepository;
+use App\Repositories\GameUserRepository;
 use App\Repositories\Interfaces\GameRepositoryInterface;
+use App\Repositories\Interfaces\GameUserRepositoryInterface;
+use App\Repositories\Interfaces\UserRepositoryInterface;
+use App\Repositories\UserRepository;
 use Illuminate\Support\ServiceProvider;
 
 class RepositoryServiceProvider extends ServiceProvider
@@ -18,6 +23,16 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(
         GameRepositoryInterface::class,
         GameRepository::class
+        );
+
+        $this->app->bind(
+            UserRepositoryInterface::class,
+            UserRepository::class
+        );
+
+        $this->app->bind(
+            GameUserRepositoryInterface::class,
+            GameUserRepository::class
         );
     }
 

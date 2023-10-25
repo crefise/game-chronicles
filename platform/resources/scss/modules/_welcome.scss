@@ -1,0 +1,36 @@
+.welcome-module {
+  &-grid {
+    &-case {
+      width: 100%;
+      height: calc(100vh - 130px);
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 100px 0;
+
+  &-case {
+    width: 400px;
+    height: 250px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+
+    &-label {
+      font-size: 25px;
+    }
+
+    &-description {
+
+    }
+  }
+}

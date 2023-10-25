@@ -8,8 +8,8 @@
     <style>
         .footer {
             height: 100px;
-            background: #333333;
-            color: #fff;
+            background: white;
+            color: black;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -22,13 +22,13 @@
         }
 
         .footer__nav a {
-            color: #fff;
+            color: black;
             text-decoration: none;
             margin-right: 20px;
         }
 
         .footer__nav a:hover {
-            color: #cccccc;
+            color: black;
         }
 
         .footer__social {
@@ -55,6 +55,7 @@
     <script src="/js/header.js" defer></script>
     @yield('script')
 
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
 <header class="header">

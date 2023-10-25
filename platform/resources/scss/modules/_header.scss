@@ -1,0 +1,40 @@
+.custom-header {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+
+  &-box {
+    padding: 10px;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &-logo {
+    padding: 5px;
+    margin-left: 15px;
+    width: 170px;
+    height: 100px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.absolute-cross-lines {
+  position: absolute;
+  display: flex;
+  gap: 25px;
+  transform: rotate(40deg);
+  left: 800px;
+  top: 0;
+
+  &-line {
+    width: 100px;
+    height: 130px;
+    background: $--platform-main-black;
+  }
+}

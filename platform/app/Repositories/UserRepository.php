@@ -4,11 +4,14 @@ namespace App\Repositories;
 
 
 use App\Models\Game;
+use App\Models\User;
 use App\Repositories\Criteria\Default\ByIdCriteria;
 use App\Repositories\Interfaces\GameRepositoryInterface;
+use App\Repositories\Interfaces\UserGameRepositoryInterface;
+use App\Repositories\Interfaces\UserRepositoryInterface;
 use Illuminate\Database\Eloquent\Builder;
 
-class GameRepository extends CoreRepository implements GameRepositoryInterface
+class UserRepository extends CoreRepository implements UserRepositoryInterface
 {
     /**
      * Model class
@@ -17,7 +20,7 @@ class GameRepository extends CoreRepository implements GameRepositoryInterface
      */
     protected function model(): string
     {
-        return Game::class;
+        return User::class;
     }
 
     /**
@@ -42,6 +45,6 @@ class GameRepository extends CoreRepository implements GameRepositoryInterface
 
         $this->applyCriteria();
 
-        return $this->builder->with('user');
+        return $this->builder;
     }
 }

@@ -12,7 +12,7 @@ class ProfileController extends Controller
     /**
      * Module prefix
      */
-    final const MODULE_PREFIX = 'profile';
+    const MODULE_PREFIX = 'profile';
 
     /**
      * Get index page

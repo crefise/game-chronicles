@@ -12,7 +12,7 @@ class AuthController extends Controller
     /**
      * Module prefix
      */
-    final const MODULE_PREFIX = 'auth';
+    const MODULE_PREFIX = 'auth';
 
     /**
      * Get registration page
