@@ -11,6 +11,9 @@
         <testsuite name="Feature">
             <directory suffix="Test.php">./tests/Feature</directory>
         </testsuite>
+        <testsuite name="CustomTestsForRoadMap">
+            <directory suffix="Test.php">./tests/CustomTestsForRoadMap</directory>
+        </testsuite>
     </testsuites>
     <coverage processUncoveredFiles="true">
         <include>
@@ -21,11 +24,17 @@
         <server name="APP_ENV" value="testing"/>
         <server name="BCRYPT_ROUNDS" value="4"/>
         <server name="CACHE_DRIVER" value="array"/>
-        <!-- <server name="DB_CONNECTION" value="sqlite"/> -->
-        <!-- <server name="DB_DATABASE" value=":memory:"/> -->
         <server name="MAIL_MAILER" value="array"/>
         <server name="QUEUE_CONNECTION" value="sync"/>
         <server name="SESSION_DRIVER" value="array"/>
         <server name="TELESCOPE_ENABLED" value="false"/>
+
+
+        <server name="DB_CONNECTION" value="mysql"/>
+        <server name="DB_HOST" value="mysql"/>
+        <server name="DB_PORT" value="3306"/>
+        <server name="DB_DATABASE" value="event_lab"/>
+        <server name="DB_USERNAME" value="admin"/>
+        <server name="DB_PASSWORD" value="password"/>
     </php>
 </phpunit>
